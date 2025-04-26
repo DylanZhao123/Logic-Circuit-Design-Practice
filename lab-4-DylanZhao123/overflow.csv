@@ -1,0 +1,17 @@
+Address,First Hexit,Second Hexit,Comments
+0,LDA,13,
+1,ADD,15,
+2,JC,9,
+3,STA,13,
+4,LDA,14,
+5,ADD,12,
+6,STA,14,
+7,,,
+8,JMP,0,
+9,LDA,14,
+10,HLT,0,
+11,,,
+12,0,1,
+13,0,0,
+14,0,0,
+15,5,4,RESERVED: X (Input 1 to 255); RETURN VALUE stored in Register A when program halts (see README)

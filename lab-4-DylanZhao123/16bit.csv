@@ -1,0 +1,17 @@
+Address,First Hexit,Second Hexit,Comments
+0,LDA,13,
+1,ADD,15,
+2,STA,15,
+3,LDI,0,
+4,JC,9,
+5,ADD,12,
+6,ADD,14,
+7,STA,14,
+8,HLT,0,
+9,LDI,1,
+10,JMP,5,
+11,,,
+12,D,E,RESERVED: X high byte (Input 0x00 to 0xFF)
+13,A,D,RESERVED: X low byte (Input 0x00 to 0xFF)
+14,B,E,RESERVED: Y high byte (Input 0x00 to 0xFF); RETURN VALUE: X+Y high byte (0x00 to 0xFF) stored here when program halts
+15,E,F,RESERVED: Y low byte (Input 0x00 to 0xFF); RETURN VALUE: X+Y low byte (0x00 to 0xFF) stored here when program halts

@@ -1,0 +1,17 @@
+Address,First Hexit,Second Hexit,Comments
+0,LDA,13,DO NOT MODIFY. Autograder overwrites this instruction to LDA 13 before execution.
+1,SUB,14,DO NOT MODIFY ARG. The Mnemonic can be SUB or ADD. Autograder overwrites this instruction to SUB 14 or ADD 14 before execution.
+2,JC,6,
+3,LDI,0,
+4,STA,15,
+5,JMP,8,
+6,LDI,1,
+7,STA,15,
+8,JZ,11,
+9,LDI,0,
+10,HLT,0,
+11,LDI,1,
+12,HLT,0,
+13,0,5,RESERVED: X (Input 0 to 255)
+14,0,5,RESERVED: Y (Input 0 to 255)
+15,0,7,RETURN VALUE: FlagC (0 or 1) resulting from addition or subtraction stored here when program halts; RETURN VALUE: FlagZ (0 or 1) resulting from addition or subtraction stored in register A when program halts. Data here will not be overwritten before execution; you may hardcode 0 or 1 here to already have the correct value here to save 2 instructions
